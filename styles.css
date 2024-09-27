@@ -1,0 +1,77 @@
+body {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: flex-start; /* Align items to the top */
+    align-items: center; /* Center items horizontally */
+    height: 100vh;
+    margin: 0;
+    background: #faffd7;
+    font-family: 'Arial', sans-serif;
+}
+
+.heading {
+    text-align: center; 
+    margin-bottom: 20px; 
+    color: #b21e4a;
+    margin-top: 20px; /* Add margin at the top if needed */
+}
+
+.calculator {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 320px; 
+}
+
+.display {
+    width: 100%;
+    height: 60px;
+    font-size: 2em;
+    border: none;
+    padding: 10px;
+    background: #d36e91;
+    color: white;
+    text-align: center; /* Ensure this is 'center' */
+    border-radius: 15px 15px 0 0;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px; 
+}
+
+.btn {
+    padding: 20px;
+    font-size: 1.5em;
+    border: none;
+    background: #ffecb3;
+    color: #333;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #ffe3e6;
+}
+
+.equal {
+    grid-column: span 4; 
+    background: #d36e91;
+    color: white;
+    height: 60px;
+}
+
+.equal:hover {
+    background: #b21e4a;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
